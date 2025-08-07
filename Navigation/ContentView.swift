@@ -13,17 +13,23 @@ struct ContentView: View {
             Text("This is the root view 🌳 ")
                 .font(.title)
                 .fontWeight(.heavy)
-            NavigationLink(destination: Text("you've arrived to the second view")
-                .font(.title)
-                .fontWeight(.semibold)
-                .multilineTextAlignment(.center)) {
-                Text("click me")
+            NavigationLink(destination: Text("You've arrived to the second view")) {
+                Text("Click to see second view.")
+            }
+                    
+                    
+                    }
+        .navigationTitle("Home")
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarHidden(true)
             }
         }//navigationstack
-        .padding()
-    }
-}
+
+    
+
 
 #Preview {
     ContentView()
 }
+
+
